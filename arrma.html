@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>NextGen RC Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="arrma.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <section id="header">
+        <a href="#"><img src="IA_Photos/nextgen.png" class="logo" alt="NextGen RC Shop Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="axial.html">Axial</a></li>
+                <li><a href="traxxas.html">Traxxas</a></li>  
+                <li><a class="active" href="arrma.html">Arrma</a></li>  
+                <div id="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <!-- Cart item count badge -->
+                    <span class="cart-item-count" style="visibility: hidden;">0</span> 
+                </div>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+        </div>
+        <button class="btn-buy">Buy Now</button>
+        <!-- Close Button (inside the cart) -->
+        <i class="ri-close-line" id="cart-close"></i>
+    </div>
+
+    <!-- Shop Section -->
+    <section class="shop">
+        <h1 class="section-title">Shop Products</h1>
+        
+        <!-- Product 1 -->
+        <div class="product-content">
+            <div class="product-box">
+                <img src="IA_Photos/arrmaone.jpg" alt="Axial One RC Car">
+            </div>
+            <h2 class="product-title">TYPHON GROM</h2>
+            <div class="price-and-cart">
+                <span class="price">$149.99</span>
+                <i class="fas fa-shopping-bag add-cart"></i>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-content">
+            <div class="product-box">
+                <img src="IA_Photos/arrmatwo.jpg" alt="Axial Two RC Car">
+            </div>
+            <h2 class="product-title">BIG ROCK</h2>
+            <div class="price-and-cart">
+                <span class="price">$379.99</span>
+                <i class="fas fa-shopping-bag add-cart"></i>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-content">
+            <div class="product-box">
+                <img src="IA_Photos/arrmathree.jpg" alt="Axial Three RC Car">
+            </div>
+            <h2 class="product-title">MOJAVE GROM </h2>
+            <div class="price-and-cart">
+                <span class="price">$229.99</span>
+                <i class="fas fa-shopping-bag add-cart"></i>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-content">
+            <div class="product-box">
+                <img src="IA_Photos/arrmafour.jpg" alt="Axial Four RC Car">
+            </div>
+            <h2 class="product-title">FURY 2WD </h2>
+            <div class="price-and-cart">
+                <span class="price">$209.99</span>
+                <i class="fas fa-shopping-bag add-cart"></i>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-content">
+            <div class="product-box">
+                <img src="IA_Photos/arrmafive.jpg" alt="Axial Five RC Car">
+            </div>
+            <h2 class="product-title">NOTORIOUS 6S </h2>
+            <div class="price-and-cart">
+                <span class="price">$649.99</span>
+                <i class="fas fa-shopping-bag add-cart"></i>
+            </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-content">
+            <div class="product-box">
+                <img src="IA_Photos/arrmasix.jpg" alt="Axial Six RC Car">
+            </div>
+            <h2 class="product-title">TYPHON 6S</h2>
+            <div class="price-and-cart">
+                <span class="price">$449.99</span>
+                <i class="fas fa-shopping-bag add-cart"></i>
+            </div>
+        </div>
+    </section>
+    <!-- Modal Structure -->
+<div id="order-modal" class="modal">
+    <div class="modal-content">
+        <h2>Confirm Your Order</h2>
+        <form id="order-form">
+            <input type="text" id="name" placeholder="Enter your Name" required><br>
+            <input type="email" id="email" placeholder="Enter your Email" required><br>
+            <input type="date" id="birthday" required><br>
+            <button type="submit" id="confirm-order">Confirm Order</button>
+        </form>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>  
+</body>
+</html>
